@@ -23,9 +23,10 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 
 1. [Development](#development)
 2. [Create eks cluster](#EKS)
-3. [Create image && docker hub](#Docker)
-4. [Deploy to Kubernetes Cluster](#deploy-kubernetes-cluster)
-5. [CI/CD Pipeline](#ci/cd-pipeline)
+3. [Resources creation](#AWS)
+4. [Create image && docker hub](#Docker)
+5. [Deploy to Kubernetes Cluster](#deploy-kubernetes-cluster)
+6. [CI/CD Pipeline](#ci/cd-pipeline)
 
 <hr>
 
@@ -68,6 +69,32 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 
 <hr>
 
+### AWS
+
+ - Cluster
+
+![11.png](Screenshots/11.png)
+
+ - Creating stacks
+
+![12.png](Screenshots/112png)
+![13.png](Screenshots/13.png)
+
+ - EC2 instances
+
+![14.png](Screenshots/14.png)
+
+ - Creating user 
+
+![15.png](Screenshots/15.png)
+
+ - User's policy
+
+![16.png](Screenshots/16.png)
+
+
+<hr>
+
 ### Docker
 
  - Try to lint Dockerfile
@@ -99,4 +126,5 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 ### ci/cd-pipeline
 
  - The whole pipeline
+ 
 ![9.png](Screenshots/9.png)
