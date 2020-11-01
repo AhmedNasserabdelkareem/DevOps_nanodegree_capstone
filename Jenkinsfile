@@ -10,7 +10,7 @@ pipeline {
         
         stage('Lint Docker File'){
             steps{
-                sh 'sudo hadolint Dockerfile'
+                sh 'sudo -S hadolint Dockerfile'
             }
         }
     }
