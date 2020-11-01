@@ -54,7 +54,6 @@ pipeline {
               steps{
                   withAWS(credentials: 'aws-static', region: 'us-west-2') {
                       sh '''
-                      ls -l
                       kubectl apply -f aws-auth-cm.yaml
                       kubectl get nodes
                       '''
