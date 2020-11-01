@@ -6,7 +6,7 @@
 				withAWS(region:'us-west-2', credentials:'aws-static') {
 					sh '''
 						eksctl create cluster \
-						--name createcluster \
+						--name deploy \
 						--version 1.17 \
 						--nodegroup-name standard-workers \
 						--node-type t2.micro \
@@ -27,7 +27,7 @@
 			steps {
 				withAWS(region:'us-west-2', credentials:'aws-static') {
 					sh '''
-						aws eks --region us-west-2 update-kubeconfig --name createcluster
+						aws eks --region us-west-2 update-kubeconfig --name deploy
 					'''
 				}
 			}
