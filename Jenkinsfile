@@ -13,7 +13,7 @@ pipeline {
             }
         }*/
         
-       /* stage('Lint Docker File'){
+        stage('Lint Docker File'){
             steps{
                 sh '''
                 docker pull hadolint/hadolint:latest-debian
@@ -37,7 +37,7 @@ pipeline {
           }
         }
       }
-    }*/
+    }
          
         stage('Set the current cluster') {
               steps{
