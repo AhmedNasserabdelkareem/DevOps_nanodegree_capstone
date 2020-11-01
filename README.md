@@ -37,6 +37,34 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 
 ### EKS
 
+ - First, Trying to create kubernetes cluster with this command:
+
+    ```
+        $ eksctl create cluster \
+						--name capstone \
+						--version 1.17 \
+						--nodegroup-name standard-workers \
+						--node-type t2.micro \
+						--nodes 2 \
+						--nodes-min 1 \
+						--nodes-max 3 \
+						--node-ami auto \
+						--region us-west-2 \
+						--zones us-west-2a \
+						--zones us-west-2b \
+						--zones us-west-2c \
+    ```
+
+ - Configure it using this command:
+
+
+    ```
+        $ aws eks --region us-west-2 update-kubeconfig --name capstone
+    ```
+
+![1.png](Screenshots/1.png)
+![2.png](Screenshots/2.png)
+![3.png](Screenshots/3.png)
 
 <hr>
 
