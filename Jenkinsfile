@@ -13,7 +13,7 @@ pipeline {
             }
         }*/
         
-        stage('Lint Docker File'){
+       /* stage('Lint Docker File'){
             steps{
                 sh '''
                 docker pull hadolint/hadolint:latest-debian
@@ -37,7 +37,28 @@ pipeline {
           }
         }
       }
-    }
+    }*/
+         
+        stage('Set the current cluster') {
+              steps{
+                  withAWS(credentials: 'aws-static', region: 'us-west-2') {
+                      sh '''
+                      aws eks --region us-west-2 update-kubeconfig --name capstone
+                      kubectl config use-context arn:aws:eks:us-west-2:711881707760:cluster/capstone
+                      '''
+                }
+            }
+        }
         
+        stage('Deploy to EKS') {
+              steps{
+                  withAWS(credentials: 'aws-static', region: 'us-west-2') {
+                      sh '''
+                      kubectl apply -f aws-auth-cm.yaml
+                      kubectl get nodes
+                      '''
+                }
+            }
+        }
     }
 }
