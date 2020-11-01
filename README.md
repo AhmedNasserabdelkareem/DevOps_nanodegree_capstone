@@ -41,18 +41,18 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 
     ```
         $ eksctl create cluster \
-						--name capstone \
-						--version 1.17 \
-						--nodegroup-name standard-workers \
-						--node-type t2.micro \
-						--nodes 2 \
-						--nodes-min 1 \
-						--nodes-max 3 \
-						--node-ami auto \
-						--region us-west-2 \
-						--zones us-west-2a \
-						--zones us-west-2b \
-						--zones us-west-2c \
+				--name capstone \
+				--version 1.17 \
+				--nodegroup-name standard-workers \
+				--node-type t2.micro \
+				--nodes 2 \
+				--nodes-min 1 \
+				--nodes-max 3 \
+				--node-ami auto \
+				--region us-west-2 \
+				--zones us-west-2a \
+				--zones us-west-2b \
+				--zones us-west-2c \
     ```
 
  - Configure it using this command:
@@ -69,6 +69,19 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 <hr>
 
 ### Docker
+
+ - Try to lint Dockerfile
+
+![4.png](Screenshots/4.png)
+![5.png](Screenshots/5.png)
+
+ - Building docker image 
+
+![6.png](Screenshots/6.png)
+
+ - Upload it to Dockerhub
+
+![10.png](Screenshots/10.png)
 
 
 <hr>
