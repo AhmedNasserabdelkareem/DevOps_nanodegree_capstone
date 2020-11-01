@@ -3,7 +3,7 @@
     stages{
         stage('Create kubernetes cluster') {
 			steps {
-				withAWS(region:'us-west-2', credentials:'aws_static') {
+				withAWS(region:'us-west-2', credentials:'aws-static') {
 					sh '''
 						eksctl create cluster \
 						--name createcluster \
@@ -25,7 +25,7 @@
 
         stage('Create config file cluster') {
 			steps {
-				withAWS(region:'us-west-2', credentials:'aws_static') {
+				withAWS(region:'us-west-2', credentials:'aws-static') {
 					sh '''
 						aws eks --region us-west-2 update-kubeconfig --name createcluster
 					'''
