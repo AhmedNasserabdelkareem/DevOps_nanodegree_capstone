@@ -86,12 +86,17 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 
 <hr>
 
-### eploy-kubernetes-cluster
+### deploy-kubernetes-cluster
+
+ - Applying to kubernetes using aws-auth.cm.yaml templete
+
+![7.png](Screenshots/7.png)
+![8.png](Screenshots/8.png)
 
 
 <hr>
 
 ### ci/cd-pipeline
 
-
-<hr>
+ - The whole pipeline
+![9.png](Screenshots/9.png)
