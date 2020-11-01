@@ -11,8 +11,8 @@ pipeline {
         stage('Lint Docker File'){
             steps{
                 sh '''
-                docker pull hadolint/hadolint:latest-debianhado
-                lint Dockerfile
+                docker pull hadolint/hadolint:latest-debian
+                hadolint Dockerfile
                 '''
             }
         }
