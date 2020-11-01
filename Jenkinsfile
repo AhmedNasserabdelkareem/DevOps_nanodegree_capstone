@@ -10,7 +10,10 @@ pipeline {
         
         stage('Lint Docker File'){
             steps{
-                sh 'sudo -S hadolint Dockerfile'
+                sh '''
+                docker pull hadolint/hadolint:latest-debianhado
+                lint Dockerfile
+                '''
             }
         }
     }
