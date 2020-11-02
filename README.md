@@ -77,7 +77,7 @@ Capstone project for Udacity's "Cloud DevOps Engineer" Nanodegree Program.
 
  - Creating stacks
 
-![12.png](Screenshots/112png)
+![12.png](Screenshots/12.png)
 ![13.png](Screenshots/13.png)
 
  - EC2 instances
